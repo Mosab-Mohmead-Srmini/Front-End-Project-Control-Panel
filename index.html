@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Banal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Banal</h1>
+    </header>
+    <main>
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <p>Welcome to the admin panel. Here, you can manage your website or application.</p>
+        </section>
+        <section id="users">
+            <h2>Users</h2>
+            <p>User management content goes here. This is some default user data.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>User  :</th>
+                        <th>Name</th>
+                        <th>Email :</th>
+                        <th>Role :</th>
+                        <th>Delete :</th>
+                    </tr>
+                </thead>
+                <tbody id="userTableBody">
+                    <!-- User data will be displayed here -->
+                </tbody>
+            </table>
+            <button id="addUserButton">Add User</button>
+            <div id="addUserForm" style="display: none;">
+                <h3>Add User :</h3>
+                <form id="userForm">
+                    <label for="userName">User Name:</label>
+                    <input type="text" id="userName" required>
+                    <label for="userEmail">User Email:</label>
+                    <input type="email" id="userEmail" required>
+                    <label for="userRole">User Role (Admin/User):</label>
+                    <input type="text" id="userRole" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+        <section id="products">
+            <h2>Products</h2>
+            <p>Product management content goes here. Here are some sample products.</p>
+            <table> :
+                <thead>
+                    <tr>
+                        <th>Product ID :</th>
+                        <th>Product Name :</th>
+                        <th>Price :</th>
+                        <th>Delete :</th>
+                    </tr>
+                </thead>
+                <tbody id="productTableBody">
+                    <!-- Product data will be displayed here -->
+                </tbody>
+            </table>
+            <button id="addProductButton">Add Product</button>
+            <div id="addProductForm" style="display: none;">
+                <h3>Add Product :</h3>
+                <form id="productForm">
+                    <label for="productName">Product Name:</label>
+                    <input type="text" id="productName" required>
+                    <label for="productPrice">Product Price:</label>
+                    <input type="text" id="productPrice" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+        <section id="settings">
+            <h2>Settings</h2>
+            <p>Settings content goes here. You can configure various options in this section.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Admin Banal, By : Mosab Srmini. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
